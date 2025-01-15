@@ -1,0 +1,63 @@
+@media screen and (max-width: 1000px){
+    p{
+        font-size: .9rem;
+        line-height: 1.8rem;
+    }
+
+    .grid-3{
+        gap: 1rem;
+    }
+
+    .skills-right ul li{
+        font-size:.9rem;
+    }
+}
+
+@media screen and (max-width: 825px){
+    .buger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .toggle-buger .line-1{
+        transform: rotate(-45deg) translate(-5px ,7px);
+    }
+
+    .toggle-buger .line-2{
+        opacity: 0;
+    }
+
+    .toggle-buger .line-3{
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+    /* Navigation */
+
+    nav{
+        position: fixed;
+        width: 50%;
+        right: 0;
+        top: 0;
+        height: 1000vh;
+        flex-direction: column;
+        background-color: var(--primaryBackgroundColor);
+        border: 1px solid var(--borderColor);
+        z-index: 9;
+        transform: translateX(100%);
+        transition: 0.6s ease-in-out;
+    }
+    nav ul{
+        height: 100vh;
+        align-items: center;
+        flex-direction:  column;
+        justify-content: center;
+    }
+
+    .nav-active{
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 640px){
+
+}
